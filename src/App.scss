@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
 //breakpoints
 @import "./breakpoints.scss";
 
@@ -13,6 +14,495 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overscroll-behavior: none;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.App {
+  z-index: 2;
+  transform: translateY(0);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+//these are defaults, come after the first div in component
+.main-wrapper {
+  width: 1560px;
+  min-width: 1560px;
+  margin: 0 auto;
+  height: 100%;
+  @include media("<=1560px") {
+    width: 1280px;
+    min-width: 1280px;
+  }
+  @include media("<=desktop") {
+    width: 1080px;
+    min-width: 1080px;
+  }
+  @include media("<=1080px") {
+    width: 100%;
+    min-width: 100%;
+  }
+  .sub-wrapper {
+    // display: flex;
+    height: 100%;
+    padding: 0 32px;
+    @include media("<=phone") {
+      padding: 0 16px;
+    }
+  }
+}
+//------------------------------
+
+//Home.js
+.home {
+  //
+  width: 100%;
+  height: 100%;
+  //transparent textures
+  background-color: #34a4b3;
+  background-image: url("https://www.transparenttextures.com/patterns/farmer.png");
+  overflow: hidden;
+
+  .container {
+    // position: relative;
+    // overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //first section---------------------------------------
+    .header-top {
+      position: relative;
+      margin-top: -500px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @include media("<=desktop") {
+      }
+      @include media("<=tablet") {
+        margin-top: -700px;
+      }
+      h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+    }
+    .border-container {
+      width: 100%;
+      position: relative;
+      .borderLine {
+        height: 3px;
+        width: 77rem;
+        background-color: $black;
+        position: absolute;
+      }
+    }
+    .first-section-content {
+      width: 100%;
+      // height: 100%;
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        color: $white;
+        position: absolute;
+        font-family: "RacingSansOne";
+        padding-top: 100px;
+        font-size: 16rem;
+        font-weight: 500;
+        margin: 0 auto;
+        mix-blend-mode: overlay;
+        z-index: 1;
+        @include media("<=desktop") {
+          font-size: 20rem;
+        }
+        @include media("<=tablet") {
+          font-size: 15rem;
+        }
+      }
+      h3 {
+        position: absolute;
+        font-family: "Tamgerine";
+        font-size: 4rem;
+        padding-top: 170px;
+        padding-left: 1100px;
+        z-index: 9;
+        margin: auto;
+        @include media("<=desktop") {
+          font-size: 3rem;
+        }
+      }
+
+      .first-section-img {
+        padding-top: 6em;
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    //second section-------------------------------------
+    .info-container {
+      position: relative;
+      padding-top: 500px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include media("<=desktop") {
+        padding-top: 600px;
+      }
+      @include media("<=tablet") {
+        padding-top: 500px;
+      }
+      h4 {
+        // margin-top: 500px;
+        margin: 0 auto;
+        font-size: 2rem;
+        padding-right: 800px;
+        @include media("<=desktop") {
+          font-size: 1.7rem;
+          padding-right: 700px;
+        }
+        @include media("<=980px") {
+          font-size: 1.4;
+          padding-right: 500px;
+        }
+        @include media("<=tablet") {
+          font-size: 1.2;
+          padding-right: 20px;
+          padding-top: 130px;
+          padding-bottom: 30px;
+        }
+        @include media("<=phone") {
+          font-size: 1.2;
+          padding-right: 60px;
+          padding-top: 600px;
+        }
+      }
+      .info-bar {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+          font-size: 1.1rem;
+          // font-weight: 2 rem;
+        }
+      }
+      .info-bar2 {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p {
+          font-size: 1.1rem;
+          // font-weight: 2 rem;
+        }
+      }
+      h5 {
+        margin: auto;
+        font-size: 1.2rem;
+      }
+      .intro-text {
+        padding-left: 800px;
+        padding-top: 40px;
+        padding-bottom: 200px;
+        width: 35%;
+        height: 50%;
+        @include media("<=desktop") {
+          padding-left: 600px;
+          width: 40%;
+        }
+        @include media("<=980px") {
+          padding-left: 500px;
+        }
+        @include media("<=tablet") {
+          padding-top: 100px;
+          padding-left: 100px;
+          width: 80%;
+        }
+        @include media("<=phone") {
+          padding-right: 200px;
+          padding-left: 200px;
+          width: 80%;
+        }
+        p {
+        }
+      }
+    }
+
+    //thrid section
+    .third-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin-top: -100px;
+      .third-header {
+        padding-top: 100px;
+        padding-right: 60rem;
+        // border-bottom: solid;
+        h2 {
+          margin: auto;
+          font-size: 3rem;
+          font-weight: 600;
+        }
+      }
+      .imgCenter {
+        position: absolute;
+        padding-top: 200px;
+        padding-left: 460px;
+        width: 25%;
+        img {
+          width: 100%;
+          height: 30vh;
+        }
+      }
+      .third-img-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        height: 100%;
+        margin-top: -60px;
+        .imgOne {
+          padding-right: 10em;
+          align-self: center;
+          justify-self: center;
+          width: 55%;
+
+          img {
+            width: 100%;
+          }
+        }
+        .imgTwo {
+          padding-left: 10em;
+          align-self: center;
+          justify-self: center;
+          width: 55%;
+          // height: 80%;
+          img {
+            width: 100%;
+          }
+        }
+        .imgThree {
+          padding-right: 10em;
+          align-self: center;
+          justify-self: center;
+          width: 55%;
+          img {
+            width: 100%;
+          }
+        }
+        .imgFour {
+          padding-left: 10em;
+          align-self: center;
+          justify-self: center;
+          width: 55%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    //fourth section----------------
+    .fourth-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .fourth-header {
+        padding-top: 10em;
+        padding-right: 50em;
+        // border-bottom: solid;
+        h2 {
+          margin: auto;
+          font-size: 3em;
+          font-weight: 600;
+        }
+      }
+      .fourth-content {
+        width: 100%;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        h3 {
+          font-family: "RacingSansOne";
+          margin: auto;
+          font-size: 6em;
+          font-weight: 600;
+          padding-left: 21rem;
+        }
+        h4 {
+          margin: auto;
+          padding-left: 23rem;
+        }
+        p {
+          margin: auto;
+          width: 25%;
+          padding-top: 1em;
+          padding-right: 11em;
+        }
+      }
+
+      .fourth-img-container {
+        margin-left: 200px;
+        overflow: hidden;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    //fifth section---------------------
+    .fifth-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding-top: 200px;
+      .fifth-content {
+        width: 100%;
+        padding-bottom: 5em;
+        h3 {
+          font-family: "RacingSansOne";
+          margin: auto;
+          font-size: 6rem;
+          font-weight: 600;
+          padding-left: 1.5rem;
+        }
+        h4 {
+          font-size: 1.7rem;
+          margin: auto;
+          padding-left: 2.5rem;
+        }
+        p {
+          margin: auto;
+          width: 25%;
+          padding-top: 1em;
+          padding-right: 52em;
+        }
+      }
+      .fifth-img-container {
+        margin-left: 100px;
+        overflow: hidden;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    //sixthSection-----------
+    .sixth-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .sixth-content {
+        width: 100%;
+        padding-bottom: 5em;
+        h3 {
+          font-family: "RacingSansOne";
+          margin: auto;
+          font-size: 6em;
+          font-weight: 600;
+          padding-left: 30rem;
+        }
+        h4 {
+          font-size: 1.7em;
+          margin: auto;
+          padding-left: 30.5rem;
+        }
+        p {
+          margin: auto;
+          width: 25%;
+          padding-top: 1em;
+          padding-left: 4rem;
+        }
+      }
+      .sixth-img-container {
+        margin-left: 270px;
+        position: absolute;
+        overflow: hidden;
+        width: 70%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+//----------------------------------------------------
+
+//section
+section {
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+//borderlines
+.bd2-container {
+  width: 100%;
+  position: relative;
+  .bd2 {
+    height: 2px;
+    width: 69em;
+    background-color: $black;
+    position: absolute;
+  }
+}
+.bd3-container {
+  width: 100%;
+  position: relative;
+  .bd3 {
+    height: 2px;
+    width: 69em;
+    background-color: $black;
+    position: absolute;
+  }
+}
+.bd4-container {
+  width: 100%;
+  position: relative;
+  .bd4 {
+    height: 3px;
+    width: 72rem;
+    background-color: $black;
+    position: absolute;
+  }
+}
+.bd5-container {
+  width: 100%;
+  position: relative;
+  .bd5 {
+    height: 3px;
+    width: 72rem;
+    background-color: $black;
+    position: absolute;
+  }
 }
