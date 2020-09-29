@@ -1,5 +1,6 @@
 {
-  "name": "hamburger-menu",
+  "name": "porfolio",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -42,6 +43,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yutaAsato/portfolio/issues"
-  },
-  "homepage": "."
+  }
 }
