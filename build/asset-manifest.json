@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/yutaAsato/portfolio/static/css/main.1d0445cc.chunk.css",
+    "main.js": "/yutaAsato/portfolio/static/js/main.1ae5c1b6.chunk.js",
+    "main.js.map": "/yutaAsato/portfolio/static/js/main.1ae5c1b6.chunk.js.map",
+    "runtime-main.js": "/yutaAsato/portfolio/static/js/runtime-main.c69d4812.js",
+    "runtime-main.js.map": "/yutaAsato/portfolio/static/js/runtime-main.c69d4812.js.map",
+    "static/js/2.622eee44.chunk.js": "/yutaAsato/portfolio/static/js/2.622eee44.chunk.js",
+    "static/js/2.622eee44.chunk.js.map": "/yutaAsato/portfolio/static/js/2.622eee44.chunk.js.map",
+    "index.html": "/yutaAsato/portfolio/index.html",
+    "precache-manifest.0f6d761cb811d75c8eea0e65fc1bb5ff.js": "/yutaAsato/portfolio/precache-manifest.0f6d761cb811d75c8eea0e65fc1bb5ff.js",
+    "service-worker.js": "/yutaAsato/portfolio/service-worker.js",
+    "static/css/main.1d0445cc.chunk.css.map": "/yutaAsato/portfolio/static/css/main.1d0445cc.chunk.css.map",
+    "static/media/austin.webp": "/yutaAsato/portfolio/static/media/austin.a7aadf33.webp",
+    "static/media/beijing.webp": "/yutaAsato/portfolio/static/media/beijing.209dcd10.webp",
+    "static/media/city1.jpg": "/yutaAsato/portfolio/static/media/city1.2d5a5642.jpg",
+    "static/media/dallas.webp": "/yutaAsato/portfolio/static/media/dallas.2bc38187.webp",
+    "static/media/london.jpg": "/yutaAsato/portfolio/static/media/london.b74bf865.jpg",
+    "static/media/newyork.webp": "/yutaAsato/portfolio/static/media/newyork.ebb81965.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c69d4812.js",
+    "static/js/2.622eee44.chunk.js",
+    "static/css/main.1d0445cc.chunk.css",
+    "static/js/main.1ae5c1b6.chunk.js"
+  ]
+}
