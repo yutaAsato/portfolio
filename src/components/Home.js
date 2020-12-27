@@ -169,7 +169,7 @@ export const Home = () => {
               </div>
             </section>
             {/* <section className="first-pseudo"></section> */}
-            <section className="second">
+            <section className="second" style={{ marginTop: "100px" }}>
               <div className="container">
                 <div className="info-container">
                   <h4>ABOUT ME .</h4>
@@ -208,7 +208,7 @@ export const Home = () => {
                 </div>
               </div>
             </section>
-            <section className="third">
+            <section className="third" style={{ marginTop: "100px" }}>
               <div className="container">
                 <div className="third-container">
                   <div className="third-header">
@@ -245,7 +245,7 @@ export const Home = () => {
                 </div>
               </div>
             </section>
-            <section className="fourth">
+            <section className="fourth" style={{ marginTop: "100px" }}>
               <div className="container">
                 <div className="fourth-container">
                   <div className="fourth-header">
@@ -281,8 +281,11 @@ export const Home = () => {
                 </div>
               </div>
             </section>
-            <section className="fourth-pseudo"></section>
-            <section className="fifth">
+            <section
+              className="fourth-pseudo"
+              style={{ marginTop: "100px" }}
+            ></section>
+            <section className="fifth" style={{ marginTop: "100px" }}>
               <div className="container">
                 <div className="fifth-container">
                   <div className="fifth-content">
@@ -314,8 +317,11 @@ export const Home = () => {
                 </div>
               </div>
             </section>
-            <section className="fifth-pseudo"></section>
-            <section className="sixth">
+            <section
+              className="fifth-pseudo"
+              style={{ marginTop: "100px" }}
+            ></section>
+            <section className="sixth" style={{ marginTop: "100px" }}>
               <div className="container">
                 <div className="sixth-container">
                   <div className="sixth-content">
