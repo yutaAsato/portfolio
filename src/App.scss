@@ -7,6 +7,8 @@
 //variables scss
 @import "./variables.scss";
 
+//media queies
+
 $red: #e20001;
 $black: #191919;
 
@@ -62,8 +64,21 @@ body {
   width: 100%;
   height: 100%;
   //transparent textures
-  background-color: #34a4b3;
-  background-image: url("https://www.transparenttextures.com/patterns/farmer.png");
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(240, 235, 212, 1) 0%,
+  //   rgba(246, 244, 227, 1) 73%,
+  //   rgba(198, 198, 198, 1) 100%
+  // );
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 143, 0, 1) 0%,
+    rgba(83, 143, 113, 1) 58%,
+    rgba(40, 80, 65, 1) 100%
+  );
+
+  // background-image: url("https://www.transparenttextures.com/patterns/farmer.png");
   overflow: hidden;
 
   .container {
@@ -83,13 +98,27 @@ body {
       display: flex;
       justify-content: space-between;
       @include media("<=desktop") {
+        margin-top: -1000px;
       }
       @include media("<=tablet") {
         margin-top: -700px;
       }
+      @include media("<=phone") {
+        margin-top: -600px;
+      }
+      @include media("<=Sphone") {
+        margin-top: -550px;
+      }
       h2 {
-        font-size: 1.5em;
+        font-family: "Racing sans one";
+        font-size: 1.9em;
         font-weight: 600;
+        @include media("<=phone") {
+          font-size: 1em;
+        }
+        @include media("<=Sphone") {
+          font-size: 0.9em;
+        }
       }
     }
     .border-container {
@@ -100,6 +129,18 @@ body {
         width: 94rem;
         background-color: $black;
         position: absolute;
+        @include media("<=desktop") {
+          width: 60.3rem;
+        }
+        @include media("<=tablet") {
+          width: 44.3rem;
+        }
+        @include media("<=phone") {
+          width: 24.3rem;
+        }
+        @include media("<=Sphone") {
+          width: 21.3rem;
+        }
       }
     }
     .first-section-content {
@@ -113,16 +154,19 @@ body {
         position: absolute;
         font-family: "Racing Sans One";
         padding-top: 100px;
-        font-size: 16rem;
+        font-size: 10rem;
         font-weight: 500;
         margin: 0 auto;
         mix-blend-mode: overlay;
         z-index: 1;
         @include media("<=desktop") {
-          font-size: 20rem;
+          font-size: 5rem;
         }
         @include media("<=tablet") {
-          font-size: 15rem;
+          font-size: 4rem;
+        }
+        @include media("<=Sphone") {
+          font-size: 3rem;
         }
       }
       h3 {
@@ -143,6 +187,9 @@ body {
         width: 70%;
         height: 100%;
         position: absolute;
+        @include media("<=desktop") {
+          height: 60%;
+        }
         img {
           width: 100%;
           height: 100%;
@@ -161,10 +208,13 @@ body {
       justify-content: center;
       align-items: center;
       @include media("<=desktop") {
-        padding-top: 600px;
+        padding-top: 300px;
       }
       @include media("<=tablet") {
-        padding-top: 500px;
+        padding-top: 100px;
+      }
+      @include media("<=phone") {
+        padding-top: 100px;
       }
       h4 {
         // margin-top: 500px;
@@ -172,23 +222,22 @@ body {
         font-size: 2rem;
         padding-right: 800px;
         @include media("<=desktop") {
-          font-size: 1.7rem;
-          padding-right: 700px;
+          font-size: 1.9rem;
+          padding-right: 10px;
+          padding-bottom: 60px;
         }
-        @include media("<=980px") {
-          font-size: 1.4;
-          padding-right: 500px;
-        }
+
         @include media("<=tablet") {
-          font-size: 1.2;
+          font-size: 1.7;
           padding-right: 20px;
-          padding-top: 130px;
+          padding-top: 100px;
           padding-bottom: 30px;
         }
         @include media("<=phone") {
-          font-size: 1.2;
-          padding-right: 60px;
-          padding-top: 600px;
+          padding-right: 0px;
+
+          font-size: 1.4rem;
+          padding-top: 0px;
         }
       }
       .info-bar {
@@ -196,9 +245,20 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @include media("<=desktop") {
+          width: 85%;
+        }
         p {
           font-size: 1.1rem;
-          // font-weight: 2 rem;
+          @include media("<=desktop") {
+            font-size: 1.2rem;
+          }
+          @include media("<=tablet") {
+            font-size: 0.8rem;
+          }
+          @include media("<=phone") {
+            font-size: 0.8rem;
+          }
         }
       }
       .info-bar2 {
@@ -208,13 +268,18 @@ body {
         justify-content: space-between;
         p {
           font-size: 1.1rem;
-          // font-weight: 2 rem;
+          @include media("<=desktop") {
+            font-size: 1.2rem;
+          }
+          @include media("<=tablet") {
+            font-size: 0.8rem;
+          }
+          @include media("<=phone") {
+            font-size: 0.5rem;
+          }
         }
       }
-      h5 {
-        margin: auto;
-        font-size: 1.2rem;
-      }
+
       .intro-text {
         padding-left: 800px;
         padding-top: 40px;
@@ -222,23 +287,42 @@ body {
         width: 35%;
         height: 50%;
         @include media("<=desktop") {
-          padding-left: 600px;
-          width: 40%;
+          padding-top: 100px;
+          padding-left: 50px;
+          width: 80%;
         }
-        @include media("<=980px") {
-          padding-left: 500px;
-        }
+
         @include media("<=tablet") {
           padding-top: 100px;
-          padding-left: 100px;
+          padding-left: 50px;
           width: 80%;
         }
         @include media("<=phone") {
+          padding-top: 100px;
           padding-right: 200px;
           padding-left: 200px;
           width: 80%;
         }
+        h5 {
+          margin: auto;
+          font-size: 1.2rem;
+          @include media("<=desktop") {
+            font-size: 1.8rem;
+          }
+          @include media("<=tablet") {
+            font-size: 1.5rem;
+          }
+        }
         p {
+          @include media("<=desktop") {
+            font-size: 1.5rem;
+          }
+          @include media("<=tablet") {
+            font-size: 1.2rem;
+          }
+          @include media("<=phone") {
+            font-size: 0.9rem;
+          }
         }
       }
     }
@@ -249,22 +333,57 @@ body {
       width: 100%;
       height: 100%;
       margin-top: -100px;
+      @include media("<=desktop") {
+        padding-top: 200px;
+      }
+      @include media("<=tablet") {
+        padding-top: 300px;
+      }
+      @include media("<=phone") {
+        padding-top: 150px;
+      }
       .third-header {
         padding-top: 100px;
         padding-right: 60rem;
-        // border-bottom: solid;
+        @include media("<=desktop") {
+          display: inline;
+          padding-right: 1rem;
+        }
+        @include media("<=tablet") {
+          display: inline;
+          padding-right: 1rem;
+        }
+
         h2 {
           margin: auto;
           font-size: 3rem;
           font-weight: 600;
+          @include media("<=tablet") {
+            font-size: 2rem;
+            display: inline;
+          }
         }
       }
       .imgCenter {
         position: absolute;
-        padding-top: 23rem;
+        padding-top: 24.5rem;
         padding-left: 35.5rem;
         width: 25%;
+        @include media("<=desktop") {
+          padding-top: 35rem;
+          padding-left: 22.5rem;
+          // width: 20px;
+        }
+        @include media("<=tablet") {
+          padding-top: 22rem;
+          padding-left: 16.5rem;
+        }
+        @include media("<=phone") {
+          padding-top: 20rem;
+          padding-left: 35vw;
+        }
         img {
+          min-width: "450px";
           width: 100%;
         }
       }
@@ -279,6 +398,9 @@ body {
           align-self: center;
           justify-self: center;
           width: 55%;
+          @include media("<=tablet") {
+            padding-right: 4em;
+          }
 
           img {
             width: 100%;
@@ -289,7 +411,9 @@ body {
           align-self: center;
           justify-self: center;
           width: 55%;
-          // height: 80%;
+          @include media("<=tablet") {
+            padding-left: 4em;
+          }
           img {
             width: 100%;
           }
@@ -299,6 +423,9 @@ body {
           align-self: center;
           justify-self: center;
           width: 55%;
+          @include media("<=tablet") {
+            padding-right: 4em;
+          }
           img {
             width: 100%;
           }
@@ -308,6 +435,9 @@ body {
           align-self: center;
           justify-self: center;
           width: 55%;
+          @include media("<=tablet") {
+            padding-left: 4em;
+          }
           img {
             width: 100%;
           }
@@ -327,28 +457,73 @@ body {
           margin: auto;
           font-size: 3em;
           font-weight: 600;
+          @include media("<=phone") {
+            font-size: 2em;
+          }
         }
       }
       .fourth-content {
         width: 100%;
         padding-top: 5em;
         padding-bottom: 5em;
+        @include media("<=phone") {
+          padding-top: 2em;
+        }
+
+        a {
+          color: black;
+          &:hover {
+            color: tomato;
+            // @include animation(pulse 500ms ease-in-out);
+          }
+
+          // @include keyframes(pulse) {
+          //   0% {
+          //     transform: scale(1);
+          //   }
+          //   50% {
+          //     transform: scale(1.2);
+          //   }
+          //   100% {
+          //     transform: scale((1));
+          //   }
+          // }
+        }
         h3 {
-          font-family: "RacingSansOne";
+          font-family: "Racing Sans One";
           margin: auto;
           font-size: 6em;
           font-weight: 600;
           padding-left: 21rem;
+
+          @include media("<=phone") {
+            font-size: 2em;
+            padding-left: 10rem;
+          }
         }
         h4 {
           margin: auto;
           padding-left: 23rem;
+          @include media("<=phone") {
+            font-size: 1em;
+            padding-left: 10rem;
+          }
         }
         p {
           margin: auto;
           width: 25%;
           padding-top: 1em;
           padding-right: 11em;
+          @include media("<=desktop") {
+            font-size: 1em;
+            padding-left: 12rem;
+            width: 60%;
+          }
+          @include media("<=phone") {
+            font-size: 1em;
+            padding-left: 1rem;
+            width: 100%;
+          }
         }
       }
 
@@ -358,6 +533,10 @@ body {
         position: absolute;
         width: 70%;
         height: 100%;
+        @include media("<=phone") {
+          width: 320px;
+          margin-left: 10px;
+        }
         img {
           width: 100%;
           height: 100%;
@@ -372,26 +551,70 @@ body {
       height: 100%;
       position: relative;
       padding-top: 200px;
+      @include media("<=phone") {
+        padding-top: 50px;
+      }
+
       .fifth-content {
         width: 100%;
         padding-bottom: 5em;
+        // @include media("<=phone") {
+        //   padding-top: 2em;
+        // }
+        a {
+          color: black;
+          &:hover {
+            color: tomato;
+            // @include animation(pulse 500ms ease-in-out);
+          }
+
+          // @include keyframes(pulse) {
+          //   0% {
+          //     transform: scale(1);
+          //   }
+          //   50% {
+          //     transform: scale(1.2);
+          //   }
+          //   100% {
+          //     transform: scale((1));
+          //   }
+          // }
+        }
         h3 {
-          font-family: "RacingSansOne";
+          font-family: "Racing Sans One";
           margin: auto;
           font-size: 6rem;
           font-weight: 600;
           padding-left: 1.5rem;
+          @include media("<=phone") {
+            font-size: 2em;
+            padding-left: 1rem;
+          }
         }
         h4 {
           font-size: 1.7rem;
           margin: auto;
           padding-left: 2.5rem;
+          @include media("<=phone") {
+            font-size: 1em;
+            padding-left: 10rem;
+          }
         }
         p {
           margin: auto;
           width: 25%;
           padding-top: 1em;
           padding-right: 52em;
+          @include media("<=desktop") {
+            font-size: 1em;
+            padding-left: 1rem;
+            width: 80%;
+          }
+          @include media("<=phone") {
+            font-size: 1em;
+            padding-left: 1rem;
+            width: 100%;
+          }
         }
       }
       .fifth-img-container {
@@ -400,6 +623,10 @@ body {
         position: absolute;
         width: 70%;
         height: 100%;
+        @include media("<=phone") {
+          width: 320px;
+          margin-left: 10px;
+        }
         img {
           width: 100%;
           height: 100%;
@@ -413,26 +640,78 @@ body {
       width: 100%;
       height: 100%;
       position: relative;
+      @include media("<=phone") {
+        margin-top: 100px;
+      }
       .sixth-content {
         width: 100%;
         padding-bottom: 5em;
+        a {
+          color: black;
+          &:hover {
+            color: tomato;
+            // @include animation(pulse 500ms ease-in-out);
+          }
+
+          // @include keyframes(pulse) {
+          //   0% {
+          //     transform: scale(1);
+          //   }
+          //   50% {
+          //     transform: scale(1.2);
+          //   }
+          //   100% {
+          //     transform: scale((1));
+          //   }
+          // }
+        }
         h3 {
-          font-family: "RacingSansOne";
+          font-family: "Racing Sans One";
           margin: auto;
           font-size: 6em;
           font-weight: 600;
           padding-left: 30rem;
+          @include media("<=desktop") {
+            padding-left: 1rem;
+          }
+          @include media("<=phone") {
+            font-size: 2em;
+            padding-left: 1rem;
+          }
         }
         h4 {
           font-size: 1.7em;
           margin: auto;
           padding-left: 30.5rem;
+          @include media("<=tablet") {
+            font-size: 1em;
+            padding-left: 9rem;
+          }
+          @include media("<=phone") {
+            font-size: 1em;
+            padding-left: 10rem;
+          }
         }
         p {
           margin: auto;
           width: 25%;
           padding-top: 1em;
           padding-left: 4rem;
+          @include media("<=desktop") {
+            font-size: 1em;
+            padding-left: 11rem;
+            width: 60%;
+          }
+          @include media("<=tablet") {
+            font-size: 1em;
+            padding-left: 0rem;
+            width: 60%;
+          }
+          @include media("<=phone") {
+            font-size: 1em;
+            padding-left: 1rem;
+            width: 100%;
+          }
         }
       }
       .sixth-img-container {
@@ -441,6 +720,18 @@ body {
         overflow: hidden;
         width: 70%;
         height: 100%;
+        @include media("<=desktop") {
+          width: 720px;
+          margin-left: 100px;
+        }
+        @include media("<=tablet") {
+          width: 520px;
+          margin-left: 100px;
+        }
+        @include media("<=phone") {
+          width: 320px;
+          margin-left: 10px;
+        }
         img {
           width: 100%;
           height: 100%;
@@ -473,6 +764,18 @@ section {
     width: 94em;
     background-color: $black;
     position: absolute;
+    @include media("<=desktop") {
+      width: 60.3rem;
+    }
+    @include media("<=tablet") {
+      width: 44.3rem;
+    }
+    @include media("<=phone") {
+      width: 24rem;
+    }
+    @include media("<=Sphone") {
+      width: 21.5em;
+    }
   }
 }
 .bd3-container {
@@ -483,6 +786,18 @@ section {
     width: 94em;
     background-color: $black;
     position: absolute;
+    @include media("<=desktop") {
+      width: 60.3rem;
+    }
+    @include media("<=tablet") {
+      width: 44.3rem;
+    }
+    @include media("<=phone") {
+      width: 24em;
+    }
+    @include media("<=Sphone") {
+      width: 21.5em;
+    }
   }
 }
 .bd4-container {
@@ -493,6 +808,18 @@ section {
     width: 94rem;
     background-color: $black;
     position: absolute;
+    @include media("<=desktop") {
+      width: 60.3rem;
+    }
+    @include media("<=tablet") {
+      width: 44.3rem;
+    }
+    @include media("<=phone") {
+      width: 23em;
+    }
+    @include media("<=Sphone") {
+      width: 21em;
+    }
   }
 }
 .bd5-container {
@@ -503,5 +830,17 @@ section {
     width: 94rem;
     background-color: $black;
     position: absolute;
+    @include media("<=desktop") {
+      width: 60.3rem;
+    }
+    @include media("<=tablet") {
+      width: 44.3rem;
+    }
+    @include media("<=phone") {
+      width: 23em;
+    }
+    @include media("<=Sphone") {
+      width: 21em;
+    }
   }
 }

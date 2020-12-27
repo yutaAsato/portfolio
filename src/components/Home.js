@@ -131,34 +131,39 @@ export const Home = () => {
     );
 
     animateSixthPseudo(".sixth-img-container img");
-  });
+  }, []);
 
   return (
     <>
-      <div className="preload" style={{ display: "none" }}>
-        <img src={require(`../images/beijing.webp`)} alt="" />
-        <img src={require(`../images/austin.webp`)} alt="" />
-      </div>
       <div className="home">
         <div className="main-wrapper">
           <div className="sub-wrapper">
             <section className="first">
               <div className="container">
                 <div className="header-top">
-                  <h2>CONCEPT SERIES</h2>
-                  <h2>CASE ONE</h2>
+                  <h2>YUTA ASATO</h2>
+                  <h2>PORTFOLIO</h2>
                 </div>
                 <div className="border-container">
                   <span className="borderLine"></span>
                 </div>
                 <div className="first-section-content">
-                  <h1>Archetype</h1>
-                  <h3>DESIGN</h3>
-                  {/* <div className="first-section-img">
-                  <img src={require(`../assets/main1.jpg`)} alt="" />
-                </div> */}
+                  <div
+                    style={{
+                      height: "100%",
+                      position: "relative",
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <h1>FULL</h1>
+                    <h1 style={{ marginTop: "150px" }}>STACK</h1>
+                    <h1 style={{ marginTop: "290px" }}>DEVELOPER</h1>
+                  </div>
+                  {/* <h3>TOKYO</h3> */}
+
                   <div className="first-section-img">
-                    <img src={require(`../images/dallas.webp`)} alt="" />
+                    <img src={require(`../assets/abstract4.jpg`)} alt="" />
                   </div>
                 </div>
               </div>
@@ -167,35 +172,37 @@ export const Home = () => {
             <section className="second">
               <div className="container">
                 <div className="info-container">
-                  <h4>WHO WE ARE .</h4>
+                  <h4>ABOUT ME .</h4>
                   <div className="info-bar">
-                    <p>PLACE</p>
-                    <p>PLACE</p>
-                    <p>PLACE</p>
-                    <p>PLACE</p>
+                    <p>LOCATION</p>
+                    <p>EXPERIENCE</p>
+                    <p>SKILL</p>
+                    <p>SPECIALITY</p>
                   </div>
                   <div className="bd2-container">
                     <span className="bd2"></span>
                   </div>
                   <div className="info-bar2">
-                    <p>PLACE</p>
-                    <p>PLACE</p>
-                    <p>PLACE</p>
-                    <p>PLACE</p>
+                    <p>Tokyo</p>
+                    <p>1+ years</p>
+                    <p>Full Stack</p>
+                    <p>React</p>
                   </div>
                   <div className="bd3-container">
                     <span className="bd3"></span>
                   </div>
                   <div className="intro-text">
-                    <h5>TITLE</h5>
+                    <h5>PROFILE</h5>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Cras fermentum est ac erat rutrum maximus ut eu neque.
-                      Cras id ipsum at orci rutrum condimentum eu at ex.
-                      Praesent luctus eros ante, tristique dapibus mi eleifend
-                      id. Donec sit amet diam vel est cursus sollicitudin sit
-                      amet ac turpis. Nulla facilisi. Sed dictum pretium leo,
-                      dictum ultricies magna placerat eget.
+                      An innovative, growth-minded web developer with over a
+                      year’s experience in building full stack web applications
+                      and a background as a classically trained pianist.
+                      Self-taught and highly motivated with a strong desire to
+                      keep up with new technologies and a passion for problem
+                      solving. Inspired by the parallels between music and
+                      programming and creatively driven to write high-quality,
+                      reusable code. Proficient in JavaScript, HTML and CSS,
+                      with a particular love for React.js.
                     </p>
                   </div>
                 </div>
@@ -205,26 +212,34 @@ export const Home = () => {
               <div className="container">
                 <div className="third-container">
                   <div className="third-header">
-                    <h2>EXPLORE</h2>
+                    <h2>MY TOOL BOX</h2>
                   </div>
                   <div className="bd4-container">
                     <span className="bd4"></span>
                   </div>
                   <div className="imgCenter">
-                    <img src={require(`../images/city1.jpg`)} alt="" />
+                    <img
+                      src={require(`../assets/react.jpg`)}
+                      alt=""
+                      // style={{ minWidth: "450px" }}
+                    />
                   </div>
                   <div className="third-img-container">
                     <div className="imgOne">
-                      <img src={require(`../images/city1.jpg`)} alt="" />
+                      <img src={require(`../assets/javascript.jpg`)} alt="" />
                     </div>
                     <div className="imgTwo">
-                      <img src={require(`../images/city1.jpg`)} alt="" />
+                      <img
+                        src={require(`../assets/css.jpg`)}
+                        alt=""
+                        style={{ maxWidth: "400px" }}
+                      />
                     </div>
                     <div className="imgThree">
-                      <img src={require(`../images/city1.jpg`)} alt="" />
+                      <img src={require(`../assets/node.jpg`)} alt="" />
                     </div>
                     <div className="imgFour">
-                      <img src={require(`../images/city1.jpg`)} alt="" />
+                      <img src={require(`../assets/postgres.png`)} alt="" />
                     </div>
                   </div>
                 </div>
@@ -234,28 +249,34 @@ export const Home = () => {
               <div className="container">
                 <div className="fourth-container">
                   <div className="fourth-header">
-                    <h2>IMAGES SECT.</h2>
+                    <h2>PROJECTS.</h2>
                   </div>
                   <div className="bd5-container">
                     <span className="bd5"></span>
                   </div>
                   <div className="fourth-content">
-                    <h3>Exhibit One</h3>
-                    <h4>TITLE</h4>
-                    <p>
-                      Etiam purus erat, convallis vitae consectetur ac, congue
-                      at arcu. Vestibulum felis orci, ultricies ac enim
-                      bibendum, cursus accumsan velit. Sed a sapien eu nunc
-                      sollicitudin euismod. Praesent nec leo eleifend, venenatis
-                      dui quis, dapibus elit. Praesent finibus aliquet neque sit
-                      amet molestie.{" "}
-                    </p>
+                    <a
+                      target="blank"
+                      style={{ textDecoration: "none" }}
+                      href="https://socialmediaapplication.netlify.app/"
+                    >
+                      <h3>SOCIAL MEDIA APP</h3>
+                      <h4>2020</h4>
+                      <p>
+                        Designed and built a full stack social media web
+                        application with full CRUD functionality utilizing React
+                        for a responsive client-side UI, React Query for
+                        asynchronous data handling and cache management and a
+                        server back-end using Node/Express connected to a
+                        PostgreSQL database.
+                      </p>
+                    </a>
                   </div>
                   {/* <div className="fourth-img-container">
                   <img src={require(`../assets/abstract2.jpg`)} alt="" />
                 </div> */}
                   <div className="fourth-img-container">
-                    <img src={require(`../images/newyork.webp`)} alt="" />
+                    <img src={require(`../images/socialmediaapp.jpg`)} alt="" />
                   </div>
                 </div>
               </div>
@@ -265,23 +286,30 @@ export const Home = () => {
               <div className="container">
                 <div className="fifth-container">
                   <div className="fifth-content">
-                    <h3>Exhibit Two</h3>
-                    <h4>TITLE</h4>
-                    <p>
-                      {" "}
-                      Etiam purus erat, convallis vitae consectetur ac, congue
-                      at arcu. Vestibulum felis orci, ultricies ac enim
-                      bibendum, cursus accumsan velit. Sed a sapien eu nunc
-                      sollicitudin euismod. Praesent nec leo eleifend, venenatis
-                      dui quis, dapibus elit. Praesent finibus aliquet neque sit
-                      amet molestie.{" "}
-                    </p>
+                    <a
+                      target="blank"
+                      style={{ textDecoration: "none" }}
+                      href="https://shopifyecommercegatsby.netlify.app/"
+                    >
+                      <h3>HEADLESS ECOMMERCE STORE</h3>
+                      <h4>2020</h4>
+                      <p>
+                        Designed and built a fully responsive Shopify Plus
+                        Headless eCommerce site using a React/Gatsby front-end
+                        to achieve high-speed performance. Gatsby GraphQL API
+                        was used to connect the client to a Shopify backend. A
+                        managed backend to handle the transactional aspects of
+                        the site was used which included offsite user account
+                        management and offsite checkouts which was achieved
+                        using the Shopify API.
+                      </p>
+                    </a>
                   </div>
                   {/* <div className="fifth-img-container">
                   <img src={require(`../assets/abstract3.jpg`)} alt="" />
                 </div> */}
                   <div className="fifth-img-container">
-                    <img src={require(`../images/london.jpg`)} alt="" />
+                    <img src={require(`../images/ecommerce.jpg`)} alt="" />
                   </div>
                 </div>
               </div>
@@ -291,23 +319,28 @@ export const Home = () => {
               <div className="container">
                 <div className="sixth-container">
                   <div className="sixth-content">
-                    <h3>Exhibit Three</h3>
-                    <h4>TITLE</h4>
-                    <p>
-                      {" "}
-                      Etiam purus erat, convallis vitae consectetur ac, congue
-                      at arcu. Vestibulum felis orci, ultricies ac enim
-                      bibendum, cursus accumsan velit. Sed a sapien eu nunc
-                      sollicitudin euismod. Praesent nec leo eleifend, venenatis
-                      dui quis, dapibus elit. Praesent finibus aliquet neque sit
-                      amet molestie.{" "}
-                    </p>
+                    <a
+                      target="blank"
+                      style={{ textDecoration: "none" }}
+                      href="https://facerecognitionapplication.netlify.app/"
+                    >
+                      <h3>FACIAL RECOGNITION APP</h3>
+                      <h4>2020</h4>
+                      <p>
+                        Designed and built a facial recognition web application
+                        which allows users to submit an image and return a
+                        bounding box for each detected human and a list of
+                        probability scores on the person’s age, appearance,
+                        gender appearance and multicultural appearance using
+                        React and the CLARIFAI Predict API.
+                      </p>
+                    </a>
                   </div>
                   {/* <div className="sixth-img-container">
                   <img src={require(`../assets/abstract4.jpg`)} alt="" />
                 </div> */}
                   <div className="sixth-img-container">
-                    <img src={require(`../images/austin.webp`)} alt="" />
+                    <img src={require(`../images/facerecog.jpeg`)} alt="" />
                   </div>
                 </div>
               </div>
