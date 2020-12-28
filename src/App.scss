@@ -593,7 +593,7 @@ body {
       position: relative;
       padding-top: 200px;
       @include media("<=phone") {
-        padding-top: 100px;
+        padding-top: 200px;
       }
 
       .fifth-content {
@@ -789,7 +789,7 @@ body {
 section {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 100vh;
 }
 
 //borderlines
