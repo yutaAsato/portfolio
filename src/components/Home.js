@@ -281,11 +281,8 @@ export const Home = () => {
                 </div>
               </div>
             </section>
-            <section
-              className="fourth-pseudo"
-              style={{ marginTop: "100px" }}
-            ></section>
-            <section className="fifth" style={{ marginTop: "100px" }}>
+            <section className="fourth-pseudo"></section>
+            <section className="fifth">
               <div className="container">
                 <div className="fifth-container">
                   <div className="fifth-content">
