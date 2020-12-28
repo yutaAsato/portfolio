@@ -652,7 +652,7 @@ body {
             width: 80%;
           }
           @include media("<=phone") {
-            font-size: 1em;
+            font-size: 1rem;
             padding-left: 1rem;
             width: 100%;
           }
@@ -786,6 +786,10 @@ body {
 //----------------------------------------------------
 
 //section
+
+//The height for section was originally set at
+//100vh but for some reason on mobile it does
+//not look the same as in development.
 section {
   position: relative;
   width: 100%;
