@@ -561,7 +561,7 @@ body {
             width: 60%;
           }
           @include media("<=phone") {
-            font-size: 1em;
+            font-size: 1rem;
             padding-left: 1rem;
             width: 100%;
           }
@@ -749,7 +749,7 @@ body {
             width: 60%;
           }
           @include media("<=phone") {
-            font-size: 1em;
+            font-size: 1rem;
             padding-left: 1rem;
             width: 100%;
           }
