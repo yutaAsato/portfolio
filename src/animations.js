@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 //-----------------
 //first section
-export const animateFirst = (img, h2, border, h1, h3) => {
+export const animateFirst = (img, h2, border, h1, h3, home) => {
   const tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".first",
@@ -20,6 +20,7 @@ export const animateFirst = (img, h2, border, h1, h3) => {
 
   //timeline
   tl1
+    .from(home, { autoAlpha: 0 })
     .from(h2, 1, {
       opacity: 0,
       y: 100,

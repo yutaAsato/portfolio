@@ -80,7 +80,8 @@ export const Home = () => {
       ".header-top h2",
       ".borderLine",
       ".first-section-content h1",
-      ".first-section-content h3"
+      ".first-section-content h3",
+      ".home"
     );
 
     animateSecond(
