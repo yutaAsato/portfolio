@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![me](https://www.loom.com/share/c329b9a775c34a3daf5af91f9c9550ba.gif
+)
 
 https://www.loom.com/share/c329b9a775c34a3daf5af91f9c9550ba
 
