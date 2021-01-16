@@ -184,10 +184,10 @@ export const Home = () => {
                     <span className="bd2"></span>
                   </div>
                   <div className="info-bar2">
-                    <p>Tokyo</p>
-                    <p>1+ years</p>
+                    <p>&ensp; Tokyo</p>
+                    <p>&emsp;&emsp; 1+ years</p>
                     <p>Full Stack</p>
-                    <p>React</p>
+                    <p>React &emsp; </p>
                   </div>
                   <div className="bd3-container">
                     <span className="bd3"></span>
