@@ -40,12 +40,35 @@ body {
   width: 100%;
   height: 100%;
 
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(255, 143, 0, 1) 0%,
+  //   rgba(83, 143, 113, 1) 58%,
+  //   rgba(40, 80, 65, 1) 100%
+  // );
+  // background: #c9d6ff; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to right,
+  //   #e2e2e2,
+  //   #c9d6ff
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   to right,
+  //   #e2e2e2,
+  //   #c9d6ff
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background: #d1913c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e9b878,
+    #e9af63
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    90deg,
-    rgba(255, 143, 0, 1) 0%,
-    rgba(83, 143, 113, 1) 58%,
-    rgba(40, 80, 65, 1) 100%
-  );
+    to right,
+    #e0b070,
+    #e7ab5d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   // background-image: url("https://www.transparenttextures.com/patterns/farmer.png");
   overflow: hidden;

@@ -157,8 +157,8 @@ export const Home = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <h1>FULL</h1>
-                    <h1 style={{ marginTop: "150px" }}>STACK</h1>
+                    <h1>FRONT</h1>
+                    <h1 style={{ marginTop: "150px" }}>END</h1>
                     <h1 style={{ marginTop: "290px" }}>DEVELOPER</h1>
                   </div>
                   {/* <h3>TOKYO</h3> */}
@@ -185,7 +185,7 @@ export const Home = () => {
                   </div>
                   <div className="info-bar2">
                     <p>&ensp; Tokyo</p>
-                    <p>&emsp;&emsp; 1+ years</p>
+                    <p>&emsp;&emsp; 2 years</p>
                     <p>Full Stack</p>
                     <p>React &emsp; </p>
                   </div>
@@ -195,15 +195,15 @@ export const Home = () => {
                   <div className="intro-text">
                     <h5>PROFILE</h5>
                     <p>
-                      An innovative, growth-minded web developer with over a
-                      year’s experience in building full stack web applications
-                      and a background as a classically trained pianist.
-                      Self-taught and highly motivated with a strong desire to
-                      keep up with new technologies and a passion for problem
-                      solving. Inspired by the parallels between music and
-                      programming and creatively driven to write high-quality,
-                      reusable code. Proficient in JavaScript, HTML and CSS,
-                      with a particular love for React.js.
+                      An innovative, growth-minded UI/UX React developer with 2
+                      years experience in building web applications and a
+                      background as a classically trained pianist. Self-taught
+                      and highly motivated with a strong desire to keep up with
+                      new technologies and a passion for problem solving.
+                      Inspired by the parallels between music and programming
+                      and creatively driven to write high-quality, reusable
+                      code. Proficient in JavaScript, HTML and CSS, with a
+                      particular love for React.
                     </p>
                   </div>
                 </div>
@@ -219,11 +219,7 @@ export const Home = () => {
                     <span className="bd4"></span>
                   </div>
                   <div className="imgCenter">
-                    <img
-                      src={require(`../assets/react.jpg`)}
-                      alt=""
-                      // style={{ minWidth: "450px" }}
-                    />
+                    <img src={require(`../assets/react.jpg`)} alt="" />
                   </div>
                   <div className="third-img-container">
                     <div className="imgOne">
